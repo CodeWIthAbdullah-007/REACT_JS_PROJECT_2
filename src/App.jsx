@@ -1,10 +1,10 @@
 import "./App.css"
 
-import Navbar from "./components/Navbar"
-import CarCard from "./components/CarCard"
-import Profile from "./components/Profile"
-import Contact from "./components/Contact"
-import About from "./components/About"
+import Navbar from "./Components/Navbar"
+import CarCard from "./Components/CarCard"
+import Profile from "./Components/Profile"
+import Contact from "./Components/Contact"
+import About from "./Components/About"
 
 import cars from "./data/cars"
 
