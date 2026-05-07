@@ -1,0 +1,81 @@
+* {
+  gap: 18px;
+}
+
+.input {
+  padding: 14px;
+
+  border-radius: 10px;
+
+  border: 1px solid rgba(255, 255, 255, 0.2);
+
+  background: rgba(255, 255, 255, 0.07);
+
+  color: white;
+
+  outline: none;
+}
+
+.input::placeholder {
+  color: #d1d5db;
+}
+
+.btn {
+  padding: 14px;
+
+  border: none;
+
+  border-radius: 10px;
+
+  background: linear-gradient(135deg, #7c3aed, #c084fc);
+
+  color: white;
+
+  font-size: 16px;
+
+  cursor: pointer;
+
+  transition: 0.3s ease;
+}
+
+.btn:hover {
+  transform: scale(1.03);
+
+  box-shadow: 0 0 20px rgba(192, 132, 252, 0.6);
+}
+
+.about-card {
+  max-width: 750px;
+  margin: auto;
+}
+
+.about-card h2,
+.about-card h3 {
+  color: #d8b4fe;
+  margin-bottom: 10px;
+}
+
+.about-card p {
+  line-height: 1.8;
+  margin-bottom: 20px;
+  color: #e5e7eb;
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .navbar ul {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .home h1,
+  .profile h1,
+  .contact h1,
+  .about h1 {
+    font-size: 32px;
+  }
+}

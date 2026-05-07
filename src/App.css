@@ -1,0 +1,203 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #1a0033, #0a0022);
+  color: #e0d4ff;
+  min-height: 100vh;
+}
+
+.navbar {
+  background: linear-gradient(90deg, #4b0082, #6a0dad);
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 4px 15px rgba(138, 43, 226, 0.3);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.navbar h2 {
+  color: white;
+  font-size: 1.8rem;
+}
+
+.navbar ul {
+  display: flex;
+  list-style: none;
+  gap: 2.5rem;
+}
+
+.navbar li {
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.navbar li:hover {
+  color: #bb86fc;
+  transform: translateY(-2px);
+}
+
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.8rem;
+  padding: 2.5rem;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.card {
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 16px;
+  overflow: hidden;
+  transition: all 0.4s ease;
+  border: 1px solid rgba(187, 134, 252, 0.2);
+  backdrop-filter: blur(10px);
+}
+
+.card:hover {
+  transform: translateY(-12px);
+  box-shadow: 0 20px 30px rgba(138, 43, 226, 0.3);
+  border-color: #bb86fc;
+}
+
+.card img {
+  width: 100%;
+  height: 190px;
+  object-fit: cover;
+  transition: transform 0.4s;
+}
+
+.card:hover img {
+  transform: scale(1.08);
+}
+
+.card h2 {
+  color: #bb86fc;
+  padding: 1rem 1rem 0.5rem;
+  font-size: 1.4rem;
+}
+
+.card p {
+  padding: 0 1rem 1rem;
+  color: #d4c4ff;
+}
+
+.profile {
+  text-align: center;
+  padding: 3rem 1rem;
+}
+
+.profile-card {
+  background: rgba(255, 255, 255, 0.1);
+  max-width: 420px;
+  margin: 0 auto;
+  padding: 2.5rem;
+  border-radius: 20px;
+  border: 2px solid #8a2be2;
+  box-shadow: 0 15px 35px rgba(138, 43, 226, 0.25);
+}
+
+.profile-card img {
+  width: 170px;
+  height: 170px;
+  border-radius: 50%;
+  border: 5px solid #bb86fc;
+  margin-bottom: 1.2rem;
+  object-fit: cover;
+}
+
+.profile-card h2 {
+  color: #bb86fc;
+  margin-bottom: 0.5rem;
+}
+
+.contact {
+  padding: 3rem 1rem;
+  text-align: center;
+}
+
+.contact-form {
+  max-width: 500px;
+  margin: 0 auto;
+  background: rgba(255, 255, 255, 0.08);
+  padding: 2.5rem;
+  border-radius: 16px;
+  border: 1px solid #8a2be2;
+}
+
+.input {
+  width: 100%;
+  padding: 14px;
+  margin: 12px 0;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid #bb86fc;
+  border-radius: 8px;
+  color: white;
+  font-size: 1rem;
+}
+
+.input::placeholder {
+  color: #b8a0ff;
+}
+
+.btn {
+  width: 100%;
+  padding: 14px;
+  margin-top: 15px;
+  background: linear-gradient(90deg, #8a2be2, #bb86fc);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: linear-gradient(90deg, #9b4dff, #d4a5ff);
+  transform: scale(1.03);
+}
+
+.about {
+  padding: 3rem 1rem;
+  text-align: center;
+}
+
+.about-card {
+  max-width: 700px;
+  margin: 0 auto;
+  background: rgba(255, 255, 255, 0.08);
+  padding: 2.5rem;
+  border-radius: 20px;
+  border: 1px solid #8a2be2;
+}
+
+.about-card h2 {
+  color: #bb86fc;
+  margin-bottom: 1rem;
+}
+
+.about-card h3 {
+  color: #d4a5ff;
+  margin: 1.5rem 0 0.8rem;
+}
+
+h1 {
+  text-align: center;
+  font-size: 2.8rem;
+  margin: 2.5rem 0 1.5rem;
+  background: linear-gradient(90deg, #bb86fc, #8a2be2);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
